@@ -1,1 +1,1 @@
-![alt tag](https://github.com/maladetska/CV-Cpp/blob/master/CV_Cpp.jpg)
+![alt tag](https://github.com/maladetska/CV-Cpp/blob/main/CV_Cpp.jpg)
