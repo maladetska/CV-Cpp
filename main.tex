@@ -58,6 +58,11 @@
 \definecolor{mygray}{gray}{0}
 \usepackage{fancybox}
 
+% \linespread{интервал}
+\usepackage{setspace}
+%\полуторный интервал
+\linespread{0.9}
+
 \usepackage{lmodern}
 \usepackage{tikz}
 
@@ -133,7 +138,7 @@
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
     \textbf{\Large Maria Okorochkova} & St.\hspace{0.5ex}Petersburg, Russia\\
-    Email: \href{mailto:okorochkova02@gmail.com}{okorochkova26@gmail.com} & GitHub:     \href{https://www.github.com/maladetska}{maladetska}\\
+    Email: \href{mailto:okorochkova26@gmail.com}{okorochkova26@gmail.com} & GitHub:     \href{https://www.github.com/maladetska}{maladetska}\\
     Telegram: \href{https://t.me/maladetska}{@maladetska}\\
     Mobile: +7(961)624-24-62
 \end{tabular*}
@@ -145,9 +150,9 @@
         \resumeSubheading
             {National Research \textbf{ITMO} University}{}
             {Bachelor of Science in Applied Mathematics and Computer Science}{Sep. 2021 - Present}{\vspace{5pt}\newline\footnotesize{\textbf{Relevant coursework: }Calculus, Algorithms and Data Structures, Discrete Mathematics, Java, C++}}
-        \resumeSubheading
-            {National Research \textbf{ITMO} University}{}
-            {Bachelor of Science in Information Systems and Technologies}{Sep. 2020 - Aug. 2021}{\vspace{5pt}\newline\footnotesize{\textbf{Relevant coursework: }Algorithms and Data Structures, Discrete Mathematics, C, C++}}
+        % \resumeSubheading
+        %     {National Research \textbf{ITMO} University}{}
+        %     {Bachelor of Science in Information Systems and Technologies}{Sep. 2020 - Aug. 2021}{\vspace{5pt}\newline\footnotesize{\textbf{Relevant coursework: }Algorithms and Data Structures, Discrete Mathematics, C, C++}}
         \resumeSubheading
             {Correspondence School of Physics and Technology of \textbf{MIPT}}{}
             {Student}{Sep. 2018 - Jun. 2020}{\vspace{5pt}\newline\footnotesize{\textbf{Relevant coursework: }Mathematics, Informatics}}
@@ -160,14 +165,25 @@
 \section{Experience}
     \resumeSubHeadingListStart
         \resumeExpSubheading
+            {Junior Software Engineer}{}
+            {STC}{Jun. 2024 - Now}
+            {\skill{\textbf{C++20}} \skill{\textbf{Linux}} \skill{\textbf{Multithreading}} \skill{\textbf{OpenGL}} \skill{\textbf{SDL2}} \skill{\textbf{hidapi}} \skill{\textbf{SFML}}}
+            \resumeDesc{
+            \begin{itemize}
+                \item Modeling \textbf{physical processes} and visualizing their results.
+                \item Application of \textbf{multithreading} to optimize the rendering in the project.
+                \item Development of software for working with HID and connection of the HID’s functionality for use for software purposes.
+                \item Solving \textbf{computational geometry} problems.
+            \end{itemize}}
+        \resumeExpSubheading
             {Software Engineer Intern}{}
             {Tinkoff · Tinkoff Origination Platform}{Jul. 2023 - Oct. 2023}
             {\skill{\textbf{Kotlin}} \skill{\textbf{DDD}} \skill{\textbf{Kubernetes}} \skill{\textbf{Apache Kafka}} \skill{\textbf{PostgreSQL}} \skill{\textbf{Spring Boot}}}
             \resumeDesc{
             \begin{itemize}
-                \item Design and development of a push\&prospects service for use of the Tinkoff's business analysts
+                \item Design and development of a push\&prospects service for use by the Tinkoff's business analysts
                 \item Design and development a web application for \textbf{uploading, validating and verifying} documents, which is now used as the \textbf{internal scan-document tool}.
-                \item Writing integration and unit tests.
+                \item Creating integration and unit tests.
             \end{itemize}}
         \resumeExpSubheading
             {Software Engineer Student}{}
@@ -177,7 +193,7 @@
             \begin{itemize}
                 \item Summer school to gain knowledge about the backend of \textbf{distributed high-load} services. 
                 \item The topics studied were: code architecture, backend basics, git, http api design, databases, multithreading, testing, load testing, devops, deployment, CI/CD, etc.
-                \item Solved practical assignments, code review
+                \item Solved practical assignments, code review.
                 % \item There were also training sessions on \textbf{algorithms and data structures} every week.
             \end{itemize}}
   \resumeSubHeadingListEnd
@@ -194,7 +210,7 @@
                 {\href{https://github.com/maladetska/TapeStructure}{Tape Type Data Sorter}}{\textit{Apr. 2024}}
                 {\skill{\textbf{C++}} \skill{\textbf{OOP}} \skill{\textbf{Memory work}}}{}
                 \resumeDesc{
-                    Console application for sorting large {\href{https://github.com/maladetska/TapeSorter/blob/main/lib/tape.h}{Tape}} (data structure) in external memory --  development {\href{https://github.com/maladetska/TapeSorter/blob/main/lib/tape_sorter.cpp}{Tape Sorter}}.
+                    Console application for sorting large {\href{https://github.com/maladetska/TapeStructure/blob/main/lib/tape.hpp}{Tape}} (data structure) in external memory --  development {\href{https://github.com/maladetska/TapeStructure/blob/main/lib/sorter/tape_sorter.hpp}{Tape Sorter}}.
                 }
             \resumeProjSubheading
                 {\href{https://github.com/maladetska/IPv4-chat}{IPv4 UDP broadcast chat}}
@@ -205,13 +221,13 @@
                 \resumeDesc{
                     Console application that exchanges text broadcast messages over a local network segment with copies running on other machines physically connected to one logical network segment.
                 }
-            \resumeProjSubheading
-                {URL Shortener for Viplink}{\textit{Jun. 2023}}
-                {\skill{\textbf{C++}} \skill{\textbf{Userver}} \skill{\textbf{PostgreSQL}}
-                \skill{\textbf{Docker Compose}} \skill{\textbf{Pytest}}}{}
-                \resumeDesc{
-                    Rest API service for URL shortening with the ability to select a target path.
-                }
+            % \resumeProjSubheading
+            %     {URL Shortener for Viplink}{\textit{Jun. 2023}}
+            %     {\skill{\textbf{C++}} \skill{\textbf{Userver}} \skill{\textbf{PostgreSQL}}
+            %     \skill{\textbf{Docker Compose}} \skill{\textbf{Pytest}}}{}
+            %     \resumeDesc{
+            %         Rest API service for URL shortening with the ability to select a target path.
+            %     }
             % \resumeProjSubheading
             %   {\href{https://github.com/maladetska/web/REST}{IMPLEMENTATION OF CODEFORCES'S CLONE}}{\textit{Dec. 2022}}
             %   {\skill{\textbf{Java}} \skill{\textbf{JavaScript}} \skill{\textbf{Vue.js}} \skill{\textbf{REST}} \skill{\textbf{Spring}} \skill{\textbf{MariaDB}}}{}
@@ -251,9 +267,9 @@
 \section{Programming Skills}
     \resumeSubHeadingListStart
         \begin{tabular}{ll}
-            \textbf{Languages:} \qquad\qquad\,\,\,\,\,\,\,\,\,\, \textbf{(experienced)}: C++, Go, Kotlin/Java; \textbf{(familiar)}: C, Swift, JavaScript, Python. \\
+            \textbf{Languages:} \qquad\qquad\,\,\,\,\,\,\,\,\,\, \textbf{(experienced)}: C++, Kotlin/Java; \textbf{(familiar)}: Bash, C, Python, Swift, JavaScript. \\
             % \textbf{Languages, familiar:} \quad\, C, JavaScript, Clojure, Prolog, {\href{https://en.wikipedia.org/wiki/Verilog}{Verilog}}, Python.\\
-            \textbf{Frameworks \& Tools:} \quad STL, Bash, PostgreSQL, Git, Docker, Kubernetes, Userver, Grafana, Prometheus, Spring Boot.
+            \textbf{Frameworks \& Tools:} \quad STL, Linux, PostgreSQL, Git, Docker, Kubernetes, Userver, Grafana, Prometheus, Spring B.
         \end{tabular}
     \resumeSubHeadingListEnd
 
@@ -278,7 +294,10 @@
     \resumeSubHeadingListStart
         \resumeSubheading
             {ITMO University, Information Technologies and Programming Faculty}{}
-            {Mentor of \textbf{Calculus} for first-year students}{Sep. 2021 - Sep. 2022}
+            {\textbf{Web development} mentor for second-year students}{Sep. 2024 - Now}
+        % \resumeSubheading
+        %     {ITMO University, Information Technologies and Programming Faculty}{}
+        %     {Mentor of \textbf{Calculus} for first-year students}{Sep. 2021 - Sep. 2022}
   \resumeSubHeadingListEnd
 
 
